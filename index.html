@@ -11,20 +11,23 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #a18cd1, #fbc2eb);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
+            background: url('people.jpg');
+            background-size: cover;
+            animation: backgroundAnimation 15s ease infinite;
         }
 
-        @keyframes gradientBG {
+        @keyframes backgroundAnimation {
             0% {
-                background-position: 0% 50%;
+                background: url('people.jpg');
             }
-            50% {
-                background-position: 100% 50%;
+            33% {
+                background: url('tech-machines.jpg');
+            }
+            66% {
+                background: url('city-background.jpg');
             }
             100% {
-                background-position: 0% 50%;
+                background: url('people.jpg');
             }
         }
 
@@ -36,6 +39,17 @@
         ul {
             list-style-type: disc;
             margin-left: 20px;
+        }
+
+        #ceo-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #ceo-section img {
+            border-radius: 50%;
+            max-width: 200px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -81,6 +95,12 @@
                     </td>
                 </tr>
             </table>
+        </section>
+
+        <section id="ceo-section">
+            <h2>Meet Our CEO</h2>
+            <img src="mercy_kasaya_ombwuri.jpg" alt="Mercy Kasaya Ombwuri">
+            <p>Mercy Kasaya Ombwuri, CEO of WebPulse, is a visionary leader driving innovation and excellence in digital solutions. With a passion for technology and creativity, she leads the team towards achieving digital success for our clients.</p>
         </section>
 
         <section id="why-choose">
