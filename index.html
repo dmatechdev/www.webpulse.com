@@ -2,29 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebPulse - About Us</title>
+    <title>Stylish Text Animation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            animation: colorChange 10s infinite alternate;
-            background-size: cover;
+            background-color: #f7f7f7;
+            animation: colorChange 5s infinite;
         }
 
         @keyframes colorChange {
             0% {
                 background-color: #ffcccc;
             }
-            25% {
-                background-color: #ccffcc;
-            }
             50% {
-                background-color: #ccccff;
-            }
-            75% {
                 background-color: #ffccff;
             }
             100% {
@@ -48,38 +39,20 @@
 
         p {
             text-align: justify;
+            visibility: hidden;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
+        #about p, #services p, #ceo-section p, #why-choose ul, #contact p {
+            animation: revealText 2s forwards;
         }
 
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-
-        #ceo-section {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        #ceo-section img {
-            border-radius: 50%;
-            max-width: 200px;
-            margin-bottom: 10px;
-            transition: transform 0.3s;
-        }
-
-        #ceo-section img:hover {
-            transform: scale(1.1);
+        @keyframes revealText {
+            0% {
+                visibility: hidden;
+            }
+            100% {
+                visibility: visible;
+            }
         }
     </style>
 </head>
@@ -151,5 +124,19 @@
             </ul>
         </section>
     </div>
+
+    <script>
+        window.onload = function() {
+            const paragraphs = document.querySelectorAll('p, li');
+            let delay = 0;
+
+            paragraphs.forEach((element) => {
+                setTimeout(() => {
+                    element.style.visibility = 'visible';
+                }, delay);
+                delay += 200;
+            });
+        };
+    </script>
 </body>
 </html>
