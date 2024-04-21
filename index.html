@@ -1,129 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IMPALA Driving School</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f2f2f2;
-        color: #333;
-    }
-    header {
-        background-color: #007bff;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-    }
-    .logo {
-        width: 150px;
-        margin: 0 auto;
-        display: block;
-    }
-    h1 {
-        margin: 0;
-        font-size: 2em;
-    }
-    p {
-        font-size: 1.2em;
-    }
-    section {
-        padding: 50px;
-        text-align: center;
-        margin: 20px auto;
-        max-width: 800px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-    .about img {
-        max-width: 100%;
-        border-radius: 10px;
-        margin-bottom: 20px;
-    }
-    .services ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    .services li {
-        font-size: 1.1em;
-        margin-bottom: 10px;
-    }
-    .testimonials blockquote {
-        font-style: italic;
-        border-left: 5px solid #333;
-        padding-left: 10px;
-        margin: 20px;
-    }
-    .contact p {
-        font-size: 1.2em;
-    }
-    footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-    }
-    .button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-        margin-top: 15px;
-    }
-    .button:hover {
-        background-color: #0056b3;
-    }
-    .section-title {
-        font-size: 1.5em;
-        margin-bottom: 20px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impala Driving School</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Section Styles */
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Contact Form Styles */
+        form {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        // JavaScript for Impala Driving School Website
+
+        // Function to display a welcome message
+        function displayWelcomeMessage() {
+            alert('Welcome to Impala Driving School!');
+        }
+
+        // Call the function when the window loads
+        window.onload = displayWelcomeMessage;
+    </script>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="IMPALA Driving School Logo" class="logo">
-        <h1>IMPALA Driving School</h1>
-        <p>Your gateway to safe driving</p>
+        <h1>Welcome to Impala Driving School</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="about">
-        <h2 class="section-title"><a href="#about">About Us</a></h2>
-        <img src="about-img.jpg" alt="Driving School">
-        <p>Welcome to IMPALA Driving School. We are committed to providing high-quality driving instruction to help you become a safe and confident driver.</p>
-        <a href="#" class="button">Learn More</a>
-    </section>
-    <section class="services">
-        <h2 class="section-title"><a href="#services">Our Services</a></h2>
-        <ul>
-            <li>Beginner's Driving Course</li>
-            <li>Defensive Driving Course</li>
-            <li>Advanced Driving Techniques</li>
-            <li>License Test Preparation</li>
-        </ul>
-        <a href="#" class="button">Book Now</a>
-    </section>
-    <section class="testimonials">
-        <h2 class="section-title"><a href="#testimonials">Testimonials</a></h2>
-        <blockquote>
-            <p>"The instructors at IMPALA Driving School are knowledgeable and patient. I passed my driving test on the first attempt!"</p>
-            <footer>- John Doe</footer>
-        </blockquote>
-    </section>
-    <section class="contact">
-        <h2 class="section-title"><a href="#contact">Contact Us</a></h2>
-        <p>For inquiries or to schedule a lesson, contact us at:</p>
-        <p>Phone: 123-456-7890</p>
-        <p>Email: info@impaladrivingschool.com</p>
-        <a href="#" class="button">Contact Now</a>
-    </section>
+    <main>
+        <section id="home">
+            <h2>Learn to Drive with Confidence</h2>
+            <p>Your journey to becoming a skilled driver starts here.</p>
+            <!-- Additional content for the Home section goes here -->
+        </section>
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <p>Choose from a variety of courses tailored to your needs.</p>
+            <!-- Course details and signup forms can be added here -->
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Find out more about our mission and our experienced instructors.</p>
+            <!-- More information about the driving school -->
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <!-- Contact form fields -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 IMPALA Driving School. All rights reserved.</p>
+        <p>© 2024 Impala Driving School</p>
     </footer>
 </body>
 </html>
