@@ -3,133 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impala Driving School</title>
+    <title>Impala Defensive Driving School</title>
     <style>
-        /* General Styles */
+        /* Basic styling for the page */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background-color: #f7f7f7;
         }
-
-        header, footer {
-            background-color: #333;
-            color: white;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
             text-align: center;
-            padding: 1em 0;
+            color: #333;
         }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Section Styles */
-        section {
-            margin: 20px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-        }
-
-        /* Contact Form Styles */
         form {
-            background-color: #f2f2f2;
-            padding: 20px;
-            border-radius: 5px;
+            margin-top: 20px;
         }
-
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
         input[type="text"],
         input[type="email"],
-        textarea {
+        input[type="tel"] {
             width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
+            padding: 10px;
+            margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            box-sizing: border-box;
         }
-
         input[type="submit"] {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
+            background-color: #333;
+            color: #fff;
             border: none;
+            padding: 10px 20px;
             border-radius: 4px;
             cursor: pointer;
         }
-
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #555;
         }
     </style>
-    <script>
-        // JavaScript for Impala Driving School Website
-
-        // Function to display a welcome message
-        function displayWelcomeMessage() {
-            alert('Welcome to Impala Driving School!');
-        }
-
-        // Call the function when the window loads
-        window.onload = displayWelcomeMessage;
-    </script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Impala Driving School</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Learn to Drive with Confidence</h2>
-            <p>Your journey to becoming a skilled driver starts here.</p>
-            <!-- Additional content for the Home section goes here -->
-        </section>
-        <section id="courses">
-            <h2>Our Courses</h2>
-            <p>Choose from a variety of courses tailored to your needs.</p>
-            <!-- Course details and signup forms can be added here -->
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Find out more about our mission and our experienced instructors.</p>
-            <!-- More information about the driving school -->
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <!-- Contact form fields -->
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Impala Driving School</p>
-    </footer>
+    <div class="container">
+        <h1>Impala Defensive Driving School</h1>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
 </body>
 </html>
