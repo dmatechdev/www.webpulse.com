@@ -86,6 +86,40 @@
             bottom: 0;
             width: 100%;
         }
+        /* Additional sections */
+        .about,
+        .courses,
+        .contact,
+        .testimonials,
+        .gallery {
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        .button {
+            background-color: var(--primary-color);
+            color: var(--accent-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: var(--secondary-color);
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .nav-bar a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
     </style>
 </head>
 <body>
@@ -96,11 +130,14 @@
 
 <div class="nav-bar">
     <a href="#home">Home</a>
+    <a href="#about">About</a>
     <a href="#courses">Courses</a>
     <a href="#contact">Contact</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#gallery">Gallery</a>
 </div>
 
-<div class="main">
+<div class="main" id="home">
     <h2>Welcome to Impala Defensive Driving School</h2>
     <p>Your safety on the road is our priority. Join us to become a confident and responsible driver.</p>
     
@@ -112,6 +149,34 @@
         <input type="tel" placeholder="Phone Number" required>
         <button type="submit">Book Now</button>
     </div>
+</div>
+
+<div class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p>Impala Defensive Driving School has been providing top-notch driving education for over a decade. Our experienced instructors are dedicated to teaching safe driving practices.</p>
+    <a href="#contact" class="button">Contact Us</a>
+</div>
+
+<div class="courses" id="courses">
+    <h2 class="section-title">Our Courses</h2>
+    <p>We offer a variety of courses for beginners, intermediate, and advanced drivers. Check out our course schedule and find the best fit for you.</p>
+    <a href="#booking-form" class="button">Book a Course</a>
+</div>
+
+<div class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Have questions? Our friendly staff is here to help. Get in touch with us today to learn more about our courses and services.</p>
+    <a href="mailto:info@impaladriving.com" class="button">Email Us</a>
+</div>
+
+<div class="testimonials" id="testimonials">
+    <h2 class="section-title">Testimonials</h2>
+    <p>Don't just take our word for it. Hear what our satisfied students have to say about their experience at Impala Defensive Driving School.</p>
+</div>
+
+<div class="gallery" id="gallery">
+    <h2 class="section-title">Gallery</h2>
+    <p>Take a look at our facilities, vehicles, and happy graduates. Our gallery gives you a glimpse into the Impala experience.</p>
 </div>
 
 <div class="footer">
